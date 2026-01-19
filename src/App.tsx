@@ -1,5 +1,6 @@
 import styles from './App.module.css'
 import Sidebar from './sidebar/Sidebar'
+import Step1 from './Step1'
 
 function App() {
 
@@ -7,8 +8,11 @@ function App() {
     <main className={styles.main}>
       <Sidebar />
       <section className={styles.form}>
-        Personal info
+       <Step1 />
       </section>
+      <div className={styles.btnContainer}>
+        <button className={styles.primaryBtn}>Next step</button>
+      </div>
     </main>
   )
 }
